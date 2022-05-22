@@ -37,18 +37,16 @@ li.nav-item:first-child {
 color: #F06C64;
 }
 
-.border-1 {
+.border-header {
     height: 6px;
     background-color: #323746;
 }
 
 /* Section 1*/
 
-.first-section {
-    height: 594px;
-}
 .slide-1 {
     background-color: #F06C64;
+    height: 594px;
 }
 
 .phone-vertical-pic, .display-vertical-pic, .shadow-vertical-pic {
@@ -71,6 +69,11 @@ color: #F06C64;
     top: 81px;
 }
 
+.slide-2 {
+    background-color: #648BF0;
+    height: 594px;
+}
+
 /*Section 2*/
 
 .second-section {
@@ -82,7 +85,7 @@ color: #F06C64;
     color: #666D89;
     font-size: 30px;
     margin-left: 40px;
-    margin-top: 59px;
+    margin-top: 59px; 
     margin-bottom: 0px;
     padding: 0px;
 }
@@ -116,8 +119,6 @@ color: #F06C64;
     margin-right: 20px;
 }
 
-.service-content {}
-
 .service-name {
     color: #666D89;
     font-size: 18px;
@@ -135,12 +136,78 @@ color: #F06C64;
     padding: 0px;
 }
 
-.border-3 {
+.border-2 {
     height: 6px;
     background-color: #FFFFFF;
 }
 
 /*Section 3*/
 
+.third-section {
+    background-color: #2D303A;
+}
+
+.filter-list {
+    margin-left: 40px;
+    margin-top: 17px;
+    margin-bottom: 18px;
+}
+
+.filter-item {
+    border: 1px solid #767E9E;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.button-text {
+    color: #767E9E;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.filter-item:first-child {
+    border-color: #BBBBBB;
+}
+
+.first-button-text {
+    color: #BBBBBB;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 68px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.border-3 {
+    height: 6px;
+    background-color: #323746;
+}
+
 /*Footer*/
 
+.footer {
+    height: 76px;
+    background-color: #2D303A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: #666D89;
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 40px;
+}
+
+.social-buttoms {
+    margin-right: 42px;
+}
