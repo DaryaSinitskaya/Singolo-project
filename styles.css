@@ -96,9 +96,9 @@ li.nav-item:last-child::after {
     height: 594px;
 }
 
-.phone-vertical-yellow .phone-vertical-green {
+.phone-vertical-yellow, .phone-vertical-green {
     display: inline;
-    position: relative;
+    position: absolute;
 }
 
 .phone-vertical-yellow {
@@ -111,8 +111,13 @@ li.nav-item:last-child::after {
 }
 
 .phone-vertical-green {
-    z-index: 5;
+    z-index: 2;
     margin-left: 382.47px;
+    margin-top: 43px;
+}
+
+.phone-vertical-2-right {
+    margin-left: 611.83px;
 }
 
 
