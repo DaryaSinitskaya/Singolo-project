@@ -61,32 +61,60 @@ li.nav-item:last-child::after {
 .slide-1 {
     background-color: #F06C64;
     height: 594px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.phone-vertical-pic, .display-vertical-pic, .shadow-vertical-pic {
-    position: relative;
-}
-.phone-vertical-pic {
-    z-index: 2;
-    top: 54px;
-    left: 111.5px;
+.phone-vertical {
+    margin-left: 112px;
 }
 
-.display-vertical-pic {
-    z-index: 3;
-    left: -95px;
-    top: -6px;
+.phone-horizontal {
+    margin-right: 112px;
 }
-.shadow-vertical-pic {
-    z-index: 1;
-    left: -303px;
-    top: 81px;
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+  }
+  
+.prev {
+    margin-left: 40px;
 }
+
+.next {
+    margin-left: 964px;
+}
+  
 
 .slide-2 {
     background-color: #648BF0;
     height: 594px;
 }
+
+.phone-vertical-yellow .phone-vertical-green {
+    display: inline;
+    position: relative;
+}
+
+.phone-vertical-yellow {
+    height: 314px;
+    width: 156.02px;
+    opacity: 0.5;
+    margin-left: 251.67px;
+    margin-top: 152px;
+    z-index: 1;
+}
+
+.phone-vertical-green {
+    z-index: 5;
+    margin-left: 382.47px;
+}
+
 
 /*Section 2*/
 
@@ -113,6 +141,8 @@ li.nav-item:last-child::after {
     margin-top: 18px;
     padding: 0px;
     margin-bottom: 0px;
+    font-weight: 300;
+
 }
 
 .service-list {
@@ -127,12 +157,13 @@ li.nav-item:last-child::after {
     display: flex;
     width: 33.3%;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .service-icon {
     margin-right: 20px;
 }
-
+    
 .service-name {
     color: #666D89;
     font-size: 18px;
@@ -146,8 +177,9 @@ li.nav-item:last-child::after {
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-    margin: 0px;
+    margin-right: 0px;
     padding: 0px;
+    text-align: justify;
 }
 
 .border-2 {
