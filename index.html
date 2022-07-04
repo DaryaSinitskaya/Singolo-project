@@ -1,139 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Singolo</title>
+  </head>
+  <body>
+    <a class="hidden-link" name="top"></a>
     <header>
-        <nav class="header">
-            <div>
-                <img class="logo" src="assets/logo.png" alt="Logotype Singolo">
-            </div>
-            <div class="main-nav">
-                <ul class="navigation">
-                    <li class="nav-item">Home</li>
-                    <li class="nav-item">Services</li>
-                    <li class="nav-item">Portfolio</li>
-                    <li class="nav-item">About</li>
-                    <li class="nav-item">Contact</li>
-                </ul>
-            </div>
-        </nav>
-        <div class="border-header"></div>
+        <div>
+          <img class="logo" src="assets/logo.png" alt="Logotype Singolo" />
+        </div>
+        <div class="main-nav">
+          <ul class="navigation">
+            <li class="nav-item"><a class="nav-item" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-item" href="#service">Services</a></li>
+            <li class="nav-item"><a class="nav-item" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-item" href="#footer">About</a></li>
+            <li class="nav-item"><a class="nav-item" href="#footer">Contact</a></li>
+          </ul>
+        </div>
     </header>
     <main>
-        <section class="first_section">
-            <div class="buttons">
-                <a class="prev" onclick="plusSlides(-1)"><img src="assets/arrow-left.svg" alt="Arrow left"></a>
-                <a class="next" onclick="plusSlides(1)"><img src="assets/arrow-right.svg" alt="Arrow right"></a>
+      <section class="phone_section">
+        <div class="buttons">
+          <a class="prev" onclick="plusSlides(-1)">
+            <img src="assets/arrow-left.svg" alt="Arrow left"/></a>
+          <a class="next" onclick="plusSlides(1)">
+            <img src="assets/arrow-right.svg" alt="Arrow right"/></a>
+        </div>
+        <div class="phones">
+          <div class="phone-pink">
+            <div class="phone-vertical">
+              <img src="assets/phone-vertical (1).png" alt="Phone vertical"/>
             </div>
-            <div class="phones">
-                <div class="slide-1">
-                <div class="phone-vertical">
-                   <img src="assets/phone-vertical (1).png" alt="Phone vertical">
-                </div>
-                <div class="phone-horizontal">
-                    <img src="assets/phone-horizontal.png" alt="Phone horizontal">
-                </div>
+            <div class="phone-horizontal">
+              <img src="assets/phone-horizontal.png" alt="Phone horizontal"/>
             </div>
+          </div>
+        </div>
+        <div class="phone-blue">
+          <img
+            class="phone-vertical-yellow"
+            src="assets/phone-vertical (1).png"
+            alt="Phone vertical"
+          />
+          <img
+            class="phone-vertical-green"
+            src="assets/phone-vertical (2).png"
+            alt="Phone vertical"
+          />
+          <img
+            class="phone-vertical-yellow phone-vertical-2-right"
+            src="assets/phone-vertical (1).png"
+            alt="Phone vertical"
+          />
+        </div>
+      </section>
+      <section class="service-section">
+        <a class="hidden-link" name="service"></a>
+        <h2 class="section-name">Our Services</h2>
+        <p class="section-description">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="service-list">
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-1.svg" alt="Pencil" />
             </div>
-            <div class="slide-2">
-                <img class="phone-vertical-yellow" src="assets/phone-vertical (1).png" alt="Phone vertical">
-                <img class="phone-vertical-green" src="assets/phone-vertical (2).png" alt="Phone vertical">
-                <img class="phone-vertical-yellow phone-vertical-2-right" src="assets/phone-vertical (1).png" alt="Phone vertical">
+            <div сlass="service-content">
+              <h4 class="service-name">Custom Design</h4>
+              <p class="service-description">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </p>
             </div>
-        </section>
-        <section class="second-section">
-            <h2 class="section-name">Our Services</h2>
-            <p class="section-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <div class="service-list">
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-1.svg" alt="Pencil"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">Custom Design</h4>
-                        <p class="service-description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-2.svg" alt="Lamp"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">Inovative Ideas</h4>
-                        <p class="service-description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-3.svg" alt="Heart"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">Love Is The Answer</h4>
-                        <p class="service-description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-4.svg" alt="Phone"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">Responsive Layout</h4>
-                        <p class="service-description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-5.svg" alt="Mail"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">24 / 7 Support</h4>
-                        <p class="service-description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                </div>
-                </div>
-                <div class="service">
-                    <div class="service-icon"><img src="assets/services-item-6.svg" alt="Star"></div>
-                    <div сlass="service-content">
-                        <h4 class="service-name">Feel Like A Star</h4>
-                        <p class="service-description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                    </div>
-                </div>
-            </div> 
-        </section>
-        <div class="border-2"></div>
-        <section class="third-section">
-            <h2 class="section-name">Portfolio</h2>
-            <p class="section-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="filter-list">
-                <button class="filter-item">All</button>
-                <button class="filter-item">Web Design</button>
-                <button class="filter-item">Graphic Design</button>
-                <button class="filter-item">Artwork</button>
+          </div>
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-2.svg" alt="Lamp" />
             </div>
-            <div class="gallery">
-                <div><img src="assets/portfolio-1.png" alt="Portfolio 1"></div>
-                <div><img src="assets/portfolio-2.png" alt="Portfolio 2"></div>
-                <div><img src="assets/portfolio-3.png" alt="Portfolio 3"></div>
-                <div><img src="assets/portfolio-4.png" alt="Portfolio 4"></div>
-                <div><img src="assets/portfolio-5.png" alt="Portfolio 5"></div>
-                <div><img src="assets/portfolio-6.png" alt="Portfolio 6"></div>
-                <div><img src="assets/portfolio-7.png" alt="Portfolio 7"></div>
-                <div><img src="assets/portfolio-8.png" alt="Portfolio 8"></div>
-                <div><img src="assets/portfolio-9.png" alt="Portfolio 9"></div>
-                <div><img src="assets/portfolio-10.png" alt="Portfolio 10"></div>
-                <div><img src="assets/portfolio-11.png" alt="Portfolio 11"></div>
-                <div><img src="assets/portfolio-12.png" alt="Portfolio 12"></div>
+            <div сlass="service-content">
+              <h4 class="service-name">Inovative Ideas</h4>
+              <p class="service-description">
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.
+              </p>
             </div>
-        </section>
-        <div class="border-3"></div>
+          </div>
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-3.svg" alt="Heart" />
+            </div>
+            <div сlass="service-content">
+              <h4 class="service-name">Love Is The Answer</h4>
+              <p class="service-description">
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-4.svg" alt="Phone" />
+            </div>
+            <div сlass="service-content">
+              <h4 class="service-name">Responsive Layout</h4>
+              <p class="service-description">
+                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                blandit nunc ligula. Praesent elit leo.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-5.svg" alt="Mail" />
+            </div>
+            <div сlass="service-content">
+              <h4 class="service-name">24 / 7 Support</h4>
+              <p class="service-description">
+                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                Nulla a sem erat. Pellentesque egestas venenatis lorem .
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-icon">
+              <img src="assets/services-item-6.svg" alt="Star" />
+            </div>
+            <div сlass="service-content">
+              <h4 class="service-name">Feel Like A Star</h4>
+              <p class="service-description">
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                nibh. Fusce vitae aliquam tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-section">
+        <a class="hidden-link" name="portfolio"></a>
+        <h2 class="section-name">Portfolio</h2>
+        <p class="section-description">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit.
+        </p>
+        <div class="filter-list">
+          <button class="filter-item">All</button>
+          <button class="filter-item">Web Design</button>
+          <button class="filter-item">Graphic Design</button>
+          <button class="filter-item">Artwork</button>
+        </div>
+        <div class="gallery">
+          <div><img class="portfolio" src="assets/portfolio-1.png" alt="A boat" /></div>
+          <div><img class="portfolio" src="assets/portfolio-2.png" alt="A girl" /></div>
+          <div><img class="portfolio" src="assets/portfolio-3.png" alt="Black and white town" /></div>
+          <div><img class="portfolio" src="assets/portfolio-4.png" alt="A robot" /></div>
+          <div><img class="portfolio" src="assets/portfolio-5.png" alt="Animals" /></div>
+          <div><img class="portfolio" src="assets/portfolio-6.png" alt="Boxs" /></div>
+          <div><img class="portfolio" src="assets/portfolio-7.png" alt="Toys" /></div>
+          <div><img class="portfolio" src="assets/portfolio-8.png" alt="Birds" /></div>
+          <div><img class="portfolio" src="assets/portfolio-9.png" alt="Green monster" /></div>
+          <div><img class="portfolio" src="assets/portfolio-10.png" alt="Video killed the radio star" /></div>
+          <div><img class="portfolio" src="assets/portfolio-11.png" alt="White monster" /></div>
+          <div><img class="portfolio" src="assets/portfolio-12.png" alt="Broken window" /></div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <div>
-                <h5 class="copyright">© Copyright 2013</h5>
-            </div>
-            <div class="social-buttoms">
-                <a href="#"><img src="assets/ico-facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="assets/ico-google-plus.svg" alt="Google-plus"></a>
-                <a href="#"><img src="assets/ico-twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="assets/ico-linkedin.svg" alt="Linkedin"></a>
-            </div>
+      <a class="hidden-link" name="footer"></a>
+      <div class="footer">
+        <div>
+          <h5 class="copyright">© Copyright 2013</h5>
         </div>
+        <div class="social-buttons">
+          <a href="#"><img src="assets/ico-facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="assets/ico-google-plus.svg" alt="Google-plus"/></a>
+          <a href="#"><img src="assets/ico-twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="assets/ico-linkedin.svg" alt="Linkedin" /></a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
