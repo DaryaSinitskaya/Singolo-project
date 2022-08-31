@@ -296,3 +296,68 @@ button.filter-item:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 770px) {
+  .service {
+    width: 50%;
+  }
+
+  .phone-vertical {
+    width: 180px;
+    height: 363px;
+  }
+
+  .phone-horizontal {
+    width: 363px;
+    height: 180px;
+  }
+
+  .phone-vertical-green {
+    width: 194px;
+    height: 393px;
+  }
+
+  .phone-vertical-yellow {
+    width: 117px;
+    height: 235px;
+  }
+
+  .portfolio {
+    height: 183.7px;
+    width: 216px;
+  }
+
+  .service {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .phone-vertical {
+    width: 88px;
+    height: 177px;
+  }
+
+  .phone-horizontal {
+    width: 177px;
+    height: 88px;
+  }
+
+  .phone-vertical-green {
+    width: 102px;
+    height: 207px;
+  }
+
+  .phone-vertical-yellow {
+    width: 56px;
+    height: 113px;
+  }
+
+  .portfolio {
+    height: 127px;
+    width: 151px;
+  }
+
+  .service {
+     width: 100%;
+  }
+}
