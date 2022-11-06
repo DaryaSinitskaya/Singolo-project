@@ -372,11 +372,16 @@ button.filter-item:hover {
   .main-nav {
     display: none;
   }
+  
+  .general-logo {
+    margin-left: 71px;
+    padding: auto;
+  }
 
-  .logo{
-    display: block;
+  .logo {
     margin: auto;
-    padding-top: 24px;
+    margin-left: 71px;
+    padding-top: 26px;
   }
 
   .header-adaptive {
@@ -409,10 +414,11 @@ button.filter-item:hover {
     height: 812px;
     position: fixed;
     background-color: #2D303A;
-    box-shadow: 100px -40px 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 100px -20px 4px 20px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     top: 0px;
     left: 0px;
+    z-index: 1;
 
     max-height: 0;
     transition: max-height .5s ease-out;
@@ -425,6 +431,8 @@ button.filter-item:hover {
   .hamb {
     cursor: pointer;
     float: left;
+    position: absolute;
+    z-index: 2;
   }
 
   .hamb-line {
@@ -472,6 +480,10 @@ button.filter-item:hover {
   .side-menu:checked ~ .hamb .hamb-line::after {
       transform: rotate(180deg);
       top: 9px;
+     }
+
+     .side-menu:checked ~ .hamb {
+      position: fixed;
      }
 
   .prev, .next {
