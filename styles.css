@@ -91,14 +91,16 @@ li.nav-item:last-child::after {
 .phone-pink {
   background-color: #f06c64;
   height: 594px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  text-align: center;
 }
 
 .phone-vertical {
   margin-right: 73px;
+  margin-top: 54px;
+}
+
+.phone-horizontal {
+  margin-bottom: 120px;
 }
 
 
@@ -123,6 +125,7 @@ li.nav-item:last-child::after {
   background-color: #648bf0;
   height: 594px;
   text-align: center;
+  display: none;
 }
 
 .phone-vertical-yellow,
@@ -323,11 +326,13 @@ button.filter-item:hover {
     width: 180px;
     height: 363px;
     margin-right: 54px;
+    margin-top: 41px;
   }
 
   .phone-horizontal {
     width: 363px;
     height: 180px;
+    margin-bottom: 90px;
   }
 
   .phone-blue {
@@ -507,11 +512,13 @@ button.filter-item:hover {
     width: 88px;
     height: 177px;
     margin-right: 26px;
+    margin-top: 20px;
   }
 
   .phone-horizontal {
     width: 177px;
     height: 88px;
+    margin-bottom: 45px;
   }
 
   .phone-blue {
