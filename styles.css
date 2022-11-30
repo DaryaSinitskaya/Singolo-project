@@ -91,24 +91,27 @@ li.nav-item:last-child::after {
 .phone-pink {
   background-color: #f06c64;
   height: 594px;
+  line-height: 594px;
   text-align: center;
 }
 
 .phone-vertical {
   margin-right: 73px;
-  margin-top: 54px;
+  vertical-align: middle;
 }
 
 .phone-horizontal {
-  margin-bottom: 120px;
+  vertical-align: middle;
 }
 
+.buttons {
+  line-height: 594px;
+}
 
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
 }
 
@@ -303,16 +306,15 @@ button.filter-item:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   
   .header-adaptive {
     display: none;
   }
-  
-  .prev,
-  .next {
-  top: 30%;
-}
+
+  .buttons {
+    line-height: 447px;
+  }
   
   .service {
     width: 50%;
@@ -320,19 +322,22 @@ button.filter-item:hover {
 
   .phone-pink {
     height: 447px;
+    line-height: 447px;
   }
 
   .phone-vertical {
     width: 180px;
     height: 363px;
     margin-right: 54px;
-    margin-top: 41px;
+    margin-top: 0px;
+    vertical-align: middle;
   }
 
   .phone-horizontal {
     width: 363px;
     height: 180px;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
+    vertical-align: middle;
   }
 
   .phone-blue {
@@ -365,7 +370,7 @@ button.filter-item:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) and (min-width: 300px) {
   
   header {
     border-bottom: none;
@@ -379,14 +384,16 @@ button.filter-item:hover {
   }
   
   .general-logo {
-    margin-left: 71px;
+    margin: auto;
     padding: auto;
+    text-align: center;
+    line-height: 71px;
   }
 
   .logo {
-    margin: auto;
-    margin-left: 71px;
-    padding-top: 26px;
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
   }
 
   .header-adaptive {
@@ -419,7 +426,241 @@ button.filter-item:hover {
     height: 812px;
     position: fixed;
     background-color: #2D303A;
-    box-shadow: 100px -20px 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 277px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+
+  .nav-logo {
+    margin-bottom: 184px;
+    line-height: 84px;
+  }
+
+  .second-logo {
+    margin-left: 71px;
+  }
+
+  .hamb {
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .hamb-line {
+    background: white;
+    display: block;
+    height: 2.4px;
+    position: relative;
+    width: 25px; 
+  }
+
+  .hamb-line::before,
+  .hamb-line::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+  .hamb-line::before {
+      top: 9px;
+  }
+
+  .hamb-line::after {
+      top: -9px;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  .side-menu:checked ~ nav{
+      max-height: 100%;
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+      transform: rotate(90deg);
+      top:0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+      transform: rotate(180deg);
+      top: -9px;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+      transform: rotate(180deg);
+      top: 9px;
+     }
+
+     .side-menu:checked ~ .hamb {
+      position: fixed;
+     }
+
+  .buttons {
+    line-height: 218px;
+  }
+
+  .prev {
+    margin-left: 9px;
+  }
+  
+  .next {
+    margin-right: 9px;
+  }
+
+  .phone-pink {
+    height: 218px;
+    line-height: 218px;
+  }
+
+  .phone-vertical {
+    width: 88px;
+    height: 177px;
+    margin-right: 26px;
+    margin-top: 0px;
+    vertical-align: middle;
+  }
+
+  .phone-horizontal {
+    width: 177px;
+    height: 88px;   
+    margin-bottom: 0px;
+    vertical-align: middle;
+  }
+
+  .phone-blue {
+    height: 218px;
+    text-align: center;
+    display: none;
+  }
+
+  .phone-vertical-green {
+    width: 88px;
+    height: 177px;
+    margin-top: 19px;
+    z-index: 0;
+  }
+
+  .phone-vertical-yellow {
+    width: 56px;
+    height: 113px;
+    padding-bottom: 30px;
+    margin-right: 18px;
+    z-index: 0;
+  }
+
+  .phone-vertical-2-right {
+    margin-left: -14px;
+    margin-right: 0px;
+    z-index: 0;
+  }
+
+  .service-section {
+    border-bottom: none;
+  }
+  .service-list {
+    margin-bottom: 0px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .portfolio-section {
+    border-bottom: none;
+    padding-bottom: 42px;
+  }
+
+  .portfolio {
+    height: 128px;
+    width: 151px;
+    margin-bottom: 0px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .social-buttons {
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+  
+  header {
+    border-bottom: none;
+    display: inline-block;
+    width: 100%;
+    height: 71px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  
+  .general-logo {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    line-height: 71px;
+  }
+
+  .logo {
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .header-adaptive {
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 21px;
+    top: 35px;
+  }
+
+  .menu {
+    margin-left: 71px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 27px;
+  }
+
+  .menu > .nav-item {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .menu > li.nav-item::after {
+    display: none;
+  }
+
+  .nav {
+    width: 278px;
+    height: 812px;
+    position: fixed;
+    background-color: #2D303A;
+    box-shadow: 277px 1px 4px 0px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     top: 0px;
     left: 0px;
@@ -491,9 +732,8 @@ button.filter-item:hover {
       position: fixed;
      }
 
-  .prev, .next {
-    width: 14px;
-    top: 23%;
+  .buttons {
+    line-height: 218px;
   }
 
   .prev {
@@ -506,19 +746,22 @@ button.filter-item:hover {
 
   .phone-pink {
     height: 218px;
+    line-height: 218px;
   }
 
   .phone-vertical {
-    width: 88px;
-    height: 177px;
-    margin-right: 26px;
-    margin-top: 20px;
+    width: 65px;
+    height: 130px;
+    margin-right: 12px;
+    margin-top: 0px;
+    vertical-align: middle;
   }
 
   .phone-horizontal {
-    width: 177px;
-    height: 88px;
-    margin-bottom: 45px;
+    width: 130px;
+    height: 65px;
+    margin-bottom: 0px;
+    vertical-align: middle;
   }
 
   .phone-blue {
@@ -532,6 +775,7 @@ button.filter-item:hover {
     width: 88px;
     height: 177px;
     margin-top: 19px;
+    z-index: 0;
   }
 
   .phone-vertical-yellow {
@@ -539,10 +783,13 @@ button.filter-item:hover {
     height: 113px;
     padding-bottom: 30px;
     margin-right: 18px;
+    z-index: 0;
   }
 
   .phone-vertical-2-right {
     margin-left: -14px;
+    margin-right: 0px;
+    z-index: 0;
   }
 
   .service-section {
@@ -584,5 +831,4 @@ button.filter-item:hover {
   .social-buttons {
     margin: auto;
   }
-
 }
