@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Singolo</title>
   </head>
   <body>
     <a class="hidden-link" name="top"></a>
     <header>
-        <div>
+        <div class="general-logo">
           <img class="logo" src="assets/logo.png" alt="Logotype Singolo" />
         </div>
+
         <div class="main-nav">
           <ul class="navigation">
             <li class="nav-item"><a class="nav-item" href="#top">Home</a></li>
@@ -22,7 +24,26 @@
             <li class="nav-item"><a class="nav-item" href="#footer">Contact</a></li>
           </ul>
         </div>
+
+        <div class="header-adaptive">
+          <input class="side-menu" type="checkbox" id="side-menu"/>
+          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+          <div class="nav-logo">
+              <img class="second-logo" src="assets/logo.png" alt="Logotype Singolo" />
+          </div>
+            <ul class="menu">
+              <li class="nav-item"><a class="nav-item" href="#top">Home</a></li>
+              <li class="nav-item"><a class="nav-item" href="#service">Services</a></li>
+              <li class="nav-item"><a class="nav-item" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-item" href="#footer">About</a></li>
+              <li class="nav-item"><a class="nav-item" href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        </div>  
+        
     </header>
+    
     <main>
       <section class="phone_section">
         <div class="buttons">
@@ -32,16 +53,12 @@
             <img src="assets/arrow-right.svg" alt="Arrow right"/></a>
         </div>
         <div class="phones">
-          <div class="phone-pink">
-            <div class="phone-vertical">
-              <img src="assets/phone-vertical (1).png" alt="Phone vertical"/>
-            </div>
-            <div class="phone-horizontal">
-              <img src="assets/phone-horizontal.png" alt="Phone horizontal"/>
-            </div>
+          <div class="phone-pink phoneScript">
+                <img class="phone-vertical" src="assets/phone-vertical (1).png" alt="Phone vertical"/>
+                <img class="phone-horizontal" src="assets/phone-horizontal.png" alt="Phone horizontal"/>
           </div>
         </div>
-        <div class="phone-blue">
+        <div class="phone-blue phoneScript">
           <img
             class="phone-vertical-yellow"
             src="assets/phone-vertical (1).png"
